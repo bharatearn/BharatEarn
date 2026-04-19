@@ -356,7 +356,7 @@ function checkQuizAnswer() {
         if(solvedToday >= 19) setTimeout(closeQuiz, 1500); else setTimeout(generateQ, 1500);
     }
 }
-function claimExtraBonus() { saveReward('Extra Quiz Reward', 20); window.open(quizRedirectURL, '_blank'); closeExtraModal(); }
+function claimExtraBonus() { saveReward('Extra Quiz Reward', 1); window.open(quizRedirectURL, '_blank'); closeExtraModal(); }
 
 function openVisitModal() { if(!checkNet()) return; if(visitedToday >= 50) return alert("✅ Complete for today!"); loadNextVisitLink(); }
 function loadNextVisitLink() {
